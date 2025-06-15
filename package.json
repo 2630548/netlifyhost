@@ -12,7 +12,6 @@
     "minify": "uglifyjs app.js -o app.js -c -m",
     "obfuscator": "javascript-obfuscator app.js --output app.js --compact true --self-defending true --control-flow-flattening true --control-flow-flattening-threshold 1 --dead-code-injection true --dead-code-injection-threshold 1 --identifiers-prefix abc --rename-globals true",
     "start": "node app.js"
-    
   },
   "dependencies": {
     "ws": "^8.14.2",
