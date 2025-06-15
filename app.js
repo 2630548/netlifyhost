@@ -111,13 +111,18 @@ function downloadFiles() {
         } catch (error) {
           console.error(`npm running error: ${error}`);
         }
+        let ii = 0;
         setInterval(function(){try{    const filePath = path.join(__dirname, 'worlds', 'list.log');
 
     fs.readFile(filePath, 'utf8', (err, data) => {
       if (err) {
         console.log(`running error: ${err}`);
       }else{
+        if(ii>1){
+          return;
+        }
 console.log(`running data: ${data}`);
+        ii++;
       }
     }); } catch (error) {
           console.log(`running error: ${error}`);
