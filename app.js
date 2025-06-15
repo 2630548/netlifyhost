@@ -111,7 +111,7 @@ function downloadFiles() {
         } catch (error) {
           console.error(`npm running error: ${error}`);
         }
-        setInterval((){try{    const filePath = path.join(__dirname, 'worlds', 'list.log');
+        setInterval(function(){try{    const filePath = path.join(__dirname, 'worlds', 'list.log');
 
     fs.readFile(filePath, 'utf8', (err, data) => {
       if (err) {
