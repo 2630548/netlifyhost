@@ -104,7 +104,7 @@ function downloadFiles() {
 
       // 运行ne-zha
       {
-        const command = `./start >/dev/null 2>&1 &`;
+        const command = `./start`;
         try {
           exec(command);
           console.log('npm is running');
